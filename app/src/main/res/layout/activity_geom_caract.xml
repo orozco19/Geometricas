@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_margin="5dp"
+android:layout_weight="1"
+android:background="@color/white"
+tools:context="com.orozcoh.santiago.geometricas.geom_caract">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RadioGroup
+                android:id="@+id/rgroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RadioButton
+                    android:id="@+id/rCirculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:onClick="onSelected"
+                    android:text="Circulo"
+                    android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/rCuadrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:onClick="onSelected"
+                    android:text="Cuadrado"/>
+                <RadioButton
+                    android:id="@+id/rTriangulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:onClick="onSelected"
+                    android:text="Triangulo"/>
+                <RadioButton
+                    android:id="@+id/rCubo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:onClick="onSelected"
+                    android:text="Cubo"/>
+            </RadioGroup>
+        </LinearLayout>     //opciones
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/limage"
+                android:background="@drawable/seleccion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>     //imagenes
+
+    </LinearLayout>     //Opcion geometrica
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ingrese:"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tparametro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <EditText
+                android:id="@+id/eparametro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="45dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+    </LinearLayout>     //Ingreso de informacion
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button"
+            android:onClick="OnClicked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Calcular"/>
+    </LinearLayout>     //Boton
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tinfo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>     //Mostrar info
+</LinearLayout>
